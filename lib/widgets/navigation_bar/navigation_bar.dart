@@ -12,7 +12,7 @@ class NavigationBar extends StatelessWidget {
         children: <Widget>[
           SizedBox(
             height: 80,
-            width: 150,
+            width: 80,
             child: Image.asset('assets/logo.png'),
           ),
           Row(
@@ -23,6 +23,9 @@ class NavigationBar extends StatelessWidget {
                 width: 60,
               ),
               NavBarItem('About'),
+              SizedBox(
+                width: 60,
+              ),
             ],
           )
         ],

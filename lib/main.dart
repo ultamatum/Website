@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Ultamatum',
       theme: ThemeData(
+        backgroundColor: Colors.black,
         primarySwatch: Colors.red,
         textTheme: GoogleFonts.openSansTextTheme(
           newTextTheme,
