@@ -14,6 +14,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     case AboutRoute:
       return getPageRoute(AboutView());
     default:
+      return null;
   }
 }
 

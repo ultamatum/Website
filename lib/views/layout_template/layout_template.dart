@@ -4,8 +4,8 @@ import 'package:website/routing/route_names.dart';
 import 'package:website/routing/router.dart';
 import 'package:website/services/navigation_service.dart';
 import 'package:website/widgets/centered_view/centered_view.dart';
-import 'package:website/widgets/navigation_bar/navigation_bar.dart';
-
+import 'package:website/widgets/navigation/navigation_bar/navigation_bar.dart';
+import 'package:website/widgets/navigation/navigation_drawer/navigation_drawer.dart';
 import '../../locator.dart';
 
 class LayoutTemplate extends StatelessWidget {
@@ -16,7 +16,7 @@ class LayoutTemplate extends StatelessWidget {
     return ResponsiveBuilder(
       builder: (context, sizingInformation) => Scaffold(
         drawer: sizingInformation.deviceScreenType == DeviceScreenType.Mobile
-            ? NavigationBar()
+            ? NavigationDrawer()
             : null,
         backgroundColor: Colors.black,
         body: CenteredView(

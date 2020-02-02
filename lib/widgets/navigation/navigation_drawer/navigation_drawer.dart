@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:website/routing/route_names.dart';
-import 'package:website/widgets/navigation_drawer/drawer_item.dart';
-import 'package:website/widgets/navigation_drawer/navigation_drawer_header.dart';
+import 'package:website/widgets/navigation/navigation_bar/navbar_item/navbar_item.dart';
+import 'navigation_drawer_header.dart';
 
 class NavigationDrawer extends StatelessWidget {
   const NavigationDrawer({Key key}) : super(key: key);
@@ -22,15 +22,15 @@ class NavigationDrawer extends StatelessWidget {
       child: Column(
         children: <Widget>[
           NavigationDrawerHeader(),
-          DrawerItem(
+          NavBarItem(
             'Games',
-            Icons.gamepad,
             GamesRoute,
+            icon: Icons.gamepad,
           ),
-          DrawerItem(
+          NavBarItem(
             'About',
-            Icons.help,
             AboutRoute,
+            icon: Icons.help,
           ),
         ],
       ),

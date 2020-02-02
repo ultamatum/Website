@@ -158,6 +158,20 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.2.1"
+  provider:
+    dependency: "direct main"
+    description:
+      name: provider
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "3.1.0"
+  provider_architecture:
+    dependency: "direct main"
+    description:
+      name: provider_architecture
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.1"
   quiver:
     dependency: transitive
     description:

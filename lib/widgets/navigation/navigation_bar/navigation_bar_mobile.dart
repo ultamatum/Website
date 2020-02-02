@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:website/widgets/navigation_bar/navbar_logo.dart';
+
+import 'navbar_logo.dart';
 
 class NavigationBarMobile extends StatelessWidget {
   const NavigationBarMobile({Key key}) : super(key: key);
@@ -15,7 +16,9 @@ class NavigationBarMobile extends StatelessWidget {
           IconButton(
             icon: Icon(Icons.menu),
             color: Colors.white,
-            onPressed: () {},
+            onPressed: () {
+              Scaffold.of(context).openDrawer();
+            },
           ),
           NavBarLogo(),
         ],
