@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:website/views/home/home_view.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:website/views/layout_template/layout_template.dart';
 
-void main() => runApp(MyApp());
+import 'locator.dart';
+
+void main() {
+  setupLocator();
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
@@ -22,7 +27,7 @@ class MyApp extends StatelessWidget {
           newTextTheme,
         ),
       ),
-      home: HomeView(),
+      home: LayoutTemplate(),
     );
   }
 }

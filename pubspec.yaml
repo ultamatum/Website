@@ -22,6 +22,7 @@ dependencies:
   google_fonts: ^0.3.4
   cupertino_icons: ^0.1.2
   responsive_builder: ^0.1.2
+  get_it: 
 
 dev_dependencies:
   flutter_test:
