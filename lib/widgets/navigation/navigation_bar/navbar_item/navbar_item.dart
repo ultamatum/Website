@@ -4,7 +4,7 @@ import 'package:responsive_builder/responsive_builder.dart';
 import 'package:website/datamodels/navbar_item_model.dart';
 import 'package:website/locator.dart';
 import 'package:website/services/navigation_service.dart';
-
+import 'package:website/extensions/hover_extensions.dart';
 import 'navbar_item_desktop.dart';
 import 'navbar_item_mobile.dart';
 
@@ -30,7 +30,7 @@ class NavBarItem extends StatelessWidget {
         child: ScreenTypeLayout(
           tablet: NavBarItemDesktop(),
           mobile: NavBarItemMobile(),
-        ),
+        ).showCursorOnHover,
       ),
     );
   }
