@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:website/models/theme.dart';
 import 'package:website/screens/main_screen.dart';
 import 'constants.dart';
 
@@ -15,8 +16,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Alexander Gray',
-      theme: ThemeData.dark(),
-      home: MainScreen(),
+      theme: UltTheme.themeData,
+      home: const MainScreen(),
     );
   }
 }
