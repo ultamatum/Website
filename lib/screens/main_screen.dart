@@ -20,7 +20,7 @@ class MainScreen extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
                   Text(
-                    'Alexander Gray',
+                    'Alexander Gray Smells of Poo',
                     textAlign: TextAlign.center,
                     style: Theme.of(context).textTheme.headline3!.copyWith(
                           color: Theme.of(context).primaryColor,
