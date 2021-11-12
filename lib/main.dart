@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Alexander Gray',
+      title: 'Alexander Gray | Freelance Programmer from Scotland',
       theme: UltTheme.themeData,
       home: const MainScreen(),
     );
