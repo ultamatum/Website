@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:website/models/theme.dart';
 import 'package:website/screens/main_screen.dart';
-import 'constants.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {

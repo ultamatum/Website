@@ -102,7 +102,7 @@ class MainScreen extends StatelessWidget {
                                     ),
                                     child: SvgPicture.asset(
                                       'assets/code.svg',
-                                      semanticsLabel: 'vector',,
+                                      semanticsLabel: 'vector',
                                     ),
                                   ),
                                   const SizedBox(height: 43),
@@ -237,8 +237,7 @@ class MainScreen extends StatelessWidget {
                                     'Unity',
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
-                                        color: const Color.fromRGBO(
-                                            255, 255, 255, 1),
+                                        color: Color.fromRGBO(255, 255, 255, 1),
                                         fontFamily: 'Open Sans',
                                         fontSize: 34,
                                         letterSpacing: 0,
@@ -249,7 +248,7 @@ class MainScreen extends StatelessWidget {
                                   const Text(
                                     'VSCode',
                                     textAlign: TextAlign.center,
-                                    style: const TextStyle(
+                                    style: TextStyle(
                                         color: Color.fromRGBO(255, 255, 255, 1),
                                         fontFamily: 'Open Sans',
                                         fontSize: 34,
@@ -274,8 +273,7 @@ class MainScreen extends StatelessWidget {
                                     'Figma',
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
-                                        color: const Color.fromRGBO(
-                                            255, 255, 255, 1),
+                                        color: Color.fromRGBO(255, 255, 255, 1),
                                         fontFamily: 'Open Sans',
                                         fontSize: 34,
                                         letterSpacing: 0,
@@ -286,7 +284,7 @@ class MainScreen extends StatelessWidget {
                                   const Text(
                                     'Git / Github',
                                     textAlign: TextAlign.center,
-                                    style: const TextStyle(
+                                    style: TextStyle(
                                         color: Color.fromRGBO(255, 255, 255, 1),
                                         fontFamily: 'Open Sans',
                                         fontSize: 34,
@@ -311,8 +309,7 @@ class MainScreen extends StatelessWidget {
                                     'NodeJS',
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
-                                        color: const Color.fromRGBO(
-                                            255, 255, 255, 1),
+                                        color: Color.fromRGBO(255, 255, 255, 1),
                                         fontFamily: 'Open Sans',
                                         fontSize: 34,
                                         letterSpacing: 0,
