@@ -26,6 +26,9 @@ flutter:
     assets:
         - assets/HeroImage.svg
         - assets/Swoosh.svg
+        - assets/Separator.svg
+        - assets/code.svg
+        - assets/software.svg
     # To add assets to your application, add an assets section, like this:
     # assets:
     #   - images/a_dot_burr.jpeg
