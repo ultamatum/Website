@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'main_screen_sections/intro_section.dart';
+import 'main_screen_sections/skills_section.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({Key? key}) : super(key: key);
@@ -13,6 +14,7 @@ class MainScreen extends StatelessWidget {
           physics: const BouncingScrollPhysics(),
           children: const [
             IntroSection(),
+            SkillsSection(),
           ],
         ),
       ),
