@@ -16,7 +16,18 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Alexander Gray | Freelance Programmer from Scotland',
       theme: UltTheme.themeData,
-      home: const MainScreen(),
+      home: Banner(
+        message: "WIP",
+        textStyle: Theme.of(context).textTheme.button!.copyWith(
+              fontWeight: FontWeight.bold,
+              fontSize: 15,
+              letterSpacing: 0.5,
+              height: 1.175,
+              color: Colors.white,
+            ),
+        location: BannerLocation.topEnd,
+        child: const MainScreen(),
+      ),
     );
   }
 }
