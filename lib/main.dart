@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: UltTheme.themeData,
       home: Banner(
         message: "WIP",
-        textStyle: Theme.of(context).textTheme.button!.copyWith(
+        textStyle: Theme.of(context).textTheme.headline1!.copyWith(
               fontWeight: FontWeight.bold,
               fontSize: 15,
               letterSpacing: 0.5,
