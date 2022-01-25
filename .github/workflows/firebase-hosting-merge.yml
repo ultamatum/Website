@@ -14,6 +14,12 @@ jobs:
         name: Build Flutter (web)
         runs-on: ubuntu-latest
         steps:
+            - uses: actions/checkout@v1
+            - uses: subosito/flutter-action@v1
+              with:
+                  channel: 'beta'
+            - run: flutter pub get
+            - run: flutter config --enable-web
             - run: |
                   touch .env
                   echo FIREBASE_API_KEY=${{ secrets.FIREBASE_API_KEY }} >> .env
@@ -21,13 +27,7 @@ jobs:
                   echo FIREBASE_MEASUREMENT_ID=${{ secrets.FIREBASE_MEASUREMENT_ID }} >> .env
                   echo FIREBASE_MESSAGING_SENDER_ID=${{ secrets.FIREBASE_MESSAGING_SENDER_ID }} >> .env
                   cat .env
-            - uses: actions/checkout@v1
-            - uses: subosito/flutter-action@v1
-              with:
-                  channel: 'dev'
-            - run: flutter pub get
-            - run: flutter config --enable-web
-            - run: flutter build web --release
+            - run: flutter build web --release -v
             - uses: FirebaseExtended/action-hosting-deploy@v0
               with:
                   repoToken: '${{ secrets.GITHUB_TOKEN }}'
