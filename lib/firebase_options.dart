@@ -44,14 +44,13 @@ class DefaultFirebaseOptions {
     );
   }
 
-  static FirebaseOptions web = FirebaseOptions(
-    apiKey: dotenv.env['FIREBASE_API_KEY'] ?? 'NOT FOUND',
-    appId: dotenv.env['FIREBASE_APP_ID'] ?? 'NOT FOUND',
-    messagingSenderId:
-        dotenv.env['FIREBASE_MESSAGING_SENDER_ID'] ?? 'NOT FOUND',
+  static FirebaseOptions web = const FirebaseOptions(
+    apiKey: 'AIzaSyBlWgbcx7eYTLe_8LyTCCXBqlfAFFwZbFY',
+    appId: '1:85746913509:web:3ed147bbcabed13424840c',
+    messagingSenderId: '85746913509',
     projectId: 'ultamatumdev',
     authDomain: 'ultamatumdev.firebaseapp.com',
     storageBucket: 'ultamatumdev.appspot.com',
-    measurementId: dotenv.env['FIREBASE_MEASUREMENT_ID'] ?? 'NOT FOUND',
+    measurementId: 'G-5TNK47Y0R1',
   );
 }

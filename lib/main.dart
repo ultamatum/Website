@@ -8,6 +8,7 @@ import 'package:firebase_analytics/firebase_analytics.dart';
 
 Future<void> main() async {
   await dotenv.load();
+
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
