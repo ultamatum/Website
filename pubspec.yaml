@@ -27,7 +27,6 @@ dev_dependencies:
 flutter:
     uses-material-design: true
     assets:
-        - .env
         - assets/HeroImage.svg
         - assets/Swoosh.svg
         - assets/code.svg
